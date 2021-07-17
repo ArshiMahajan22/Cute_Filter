@@ -1,0 +1,19 @@
+h1{
+    font-family: cursive !important;
+    font-size: large !important;
+}
+
+button:hover{
+    background-color: gold !important;
+}
+
+canvas{
+    animation-name: Glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Glow{
+    from{box-shadow: 1px 1px 38px red;}
+    to{box-shadow: 1px 1px 38px yellow;}
+}
