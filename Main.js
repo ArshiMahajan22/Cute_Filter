@@ -1,8 +1,6 @@
 var Filter_Y = 0;
 var Filter_X = 0;
 var Filter;
-var positionX = screen.width/2;
-var positionY = screen.height/2;
 
 function preload(){
     Filter = loadImage('https://i.postimg.cc/d0pSXBX8/Filter.png');
@@ -10,7 +8,7 @@ function preload(){
 
 function setup(){
     canvas = createCanvas(300, 300);
-    canvas.position(positionX, positionY);
+    canvas.center();
     video = createCapture(VIDEO);
     video.hide();
     video.size(300, 300);
